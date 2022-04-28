@@ -11,6 +11,7 @@ public class Burn : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print(collision.gameObject.name);
+        
         if (collision.gameObject.CompareTag("Key"))
         {
 

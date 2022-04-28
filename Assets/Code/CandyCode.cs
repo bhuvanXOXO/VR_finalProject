@@ -14,15 +14,18 @@ public class CandyCode : MonoBehaviour
          if(other.CompareTag("Player")){
              crunchCandy.Play();
              PublicVars.candyNum++;
-             candyUI.text = PublicVars.candyNum++.ToString();
-             Destroy(gameObject);
-             StartCoroutine(DisplayCandyCount());
+             candyUI.text = PublicVars.candyNum.ToString();
+             //StartCoroutine(DisplayCandyCount());
+             candyCounter.GetComponent<FollowParent>().StartDisplay();
+             Destroy(gameObject);    
          }
     }
+
+    /*
     private IEnumerator DisplayCandyCount()
     {
         candyCounter.SetActive(true);
         yield return new WaitForSeconds(2);
         candyCounter.SetActive(false);
-    }
+    }*/
 }
