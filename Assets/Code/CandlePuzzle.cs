@@ -36,6 +36,12 @@ public class CandlePuzzle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("LightingCandle"))
+        {
+            PublicVars.haveLightingCandle = true;
+        }
+
+
         if (PublicVars.haveLightingCandle)
         {
             Debug.Log(other.tag);
@@ -123,6 +129,14 @@ public class CandlePuzzle : MonoBehaviour
         }
     }
 
+    /*private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("LightingCandle"))
+        {
+            PublicVars.haveLightingCandle = false;
+        }
+    }*/
+
     void CheckResult() 
     {
         if (currentOrder.Length == correctAnswer.Length) 
@@ -168,3 +182,4 @@ public class CandlePuzzle : MonoBehaviour
 
     }
 }
+

@@ -13,6 +13,7 @@ TagManager:
   - Candle4
   - Candle5
   - Candle6
+  - LightingCandle
   layers:
   - Default
   - TransparentFX
