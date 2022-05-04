@@ -7,6 +7,12 @@ TagManager:
   - Logs
   - Torch
   - Key
+  - Candle1
+  - Candle2
+  - Candle3
+  - Candle4
+  - Candle5
+  - Candle6
   layers:
   - Default
   - TransparentFX
