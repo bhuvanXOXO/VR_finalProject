@@ -14,7 +14,7 @@ public class CandyCode : MonoBehaviour
          if(other.CompareTag("Player")){
              crunchCandy.Play();
              PublicVars.candyNum++;
-             candyUI.text = PublicVars.candyNum.ToString();
+             candyUI.text = PublicVars.candyNum.ToString() + "/14";
              //StartCoroutine(DisplayCandyCount());
              candyCounter.GetComponent<FollowParent>().StartDisplay();
              Destroy(gameObject);    
