@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: ae481ff829d9f734a9e16f9b2fb0524e
+  - enabled: 1
+    path: Assets/Scenes/Opening.unity
+    guid: 66c8b6467066a3148b2bd927103daec1
+  - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: 3d4ab94f89a59044c963cdb0308323b3
   - enabled: 1
@@ -15,17 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/ForestBright.unity
     guid: a1cf10e5ab38541bd9214e9643732b2c
   - enabled: 1
-    path: Assets/Scenes/Ending.unity
-    guid: f9fae3ccb2c6cd8488c4b5909590e8be
+    path: Assets/Scenes/Closing.unity
+    guid: 69df99b47219f6243b86549f150569bd
   - enabled: 1
-    path: Assets/Scenes/Title.unity
-    guid: ae481ff829d9f734a9e16f9b2fb0524e
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/Ending.unity
+    guid: 48241a6b162c25145aec93e6bc45540b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: fac34b3c40d7f574da6fc445e9394267, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e4483b7f02eb9084c8dd1cc82b59fa09, type: 2}
