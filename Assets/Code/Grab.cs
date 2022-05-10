@@ -67,6 +67,16 @@ public class Grab : MonoBehaviour
             yield return null;
         }
         SnapToHand();
+
+        if (transform.gameObject.tag == "LightingCandle")  /// BHUVAN'S 3 LINES
+        {
+            PublicVars.haveLightingCandle = true;
+        }
+
+        if (transform.gameObject.tag == "Key")  /// BHUVAN'S 3 LINES
+        {
+            PublicVars.haveTorch = true;
+        }
     }
 
     void SnapToHand()

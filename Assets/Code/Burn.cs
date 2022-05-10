@@ -12,11 +12,16 @@ public class Burn : MonoBehaviour
     {
         print(collision.gameObject.name);
         
-        if (collision.gameObject.CompareTag("Key"))
+        if (collision.gameObject.CompareTag("Player"))
         {
+            if (PublicVars.haveTorch) 
+            {
+                Explode();
+                Destroy(gameObject);
+            }
+            
 
-            Explode();
-            Destroy(gameObject);
+            
 
         }
     }

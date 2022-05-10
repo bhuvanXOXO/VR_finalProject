@@ -6481,6 +6481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2741393020269511909}
+  - component: {fileID: 2741393020269511910}
   m_Layer: 0
   m_Name: house Red
   m_TagString: Untagged
@@ -6527,6 +6528,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 177.704, z: 0}
+--- !u!65 &2741393020269511910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741393020269511908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7381477, y: 2.3060431, z: 2.6539974}
+  m_Center: {x: 0.1045895, y: -0.03446689, z: -0.80832285}
 --- !u!1001 &2741393020290741691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6774,6 +6788,14 @@ PrefabInstance:
     - target: {fileID: 4461917219812669554, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461917219812669560, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461917219812669561, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4461917219812669564, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
       propertyPath: m_RootOrder

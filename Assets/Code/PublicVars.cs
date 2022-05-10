@@ -4,6 +4,7 @@ public static class PublicVars
     public static bool secondPuzzleSuccess;
 
     public static bool haveKey = true;
-    public static bool haveLightingCandle = true;
+    public static bool haveLightingCandle = false;
+    public static bool haveTorch = false;
 
 }

@@ -20,6 +20,10 @@ public class CandlePuzzle : MonoBehaviour
     public GameObject light5;
     public GameObject light6;
 
+    public AudioSource burnCandle;
+    public AudioSource treasureSound;
+    public AudioSource candleFail;
+
     bool cl1 = false;
     bool cl2 = false;
     bool cl3 = false;
@@ -39,6 +43,7 @@ public class CandlePuzzle : MonoBehaviour
         if (other.CompareTag("LightingCandle"))
         {
             PublicVars.haveLightingCandle = true;
+            Debug.Log("lighting candle on - player code");
         }
 
 
@@ -56,6 +61,7 @@ public class CandlePuzzle : MonoBehaviour
                         candle6.SetActive(true);
                         light6.SetActive(true);
                         cl6 = true;
+                        burnCandle.Play();
                         CheckResult();
                     }
                     
@@ -69,6 +75,7 @@ public class CandlePuzzle : MonoBehaviour
                         candle5.SetActive(true);
                         light5.SetActive(true);
                         cl5 = true;
+                        burnCandle.Play();
                         CheckResult();
                     }
 
@@ -81,6 +88,7 @@ public class CandlePuzzle : MonoBehaviour
                         candle4.SetActive(true);
                         light4.SetActive(true);
                         cl4 = true;
+                        burnCandle.Play();
                         CheckResult();
                     }
                     
@@ -94,6 +102,7 @@ public class CandlePuzzle : MonoBehaviour
                         candle3.SetActive(true);
                         light3.SetActive(true);
                         cl3 = true;
+                        burnCandle.Play();
                         CheckResult();
                     }
                     
@@ -107,6 +116,7 @@ public class CandlePuzzle : MonoBehaviour
                         candle2.SetActive(true);
                         light2.SetActive(true);
                         cl2 = true;
+                        burnCandle.Play();
                         CheckResult();
                     }
                     
@@ -120,6 +130,7 @@ public class CandlePuzzle : MonoBehaviour
                         candle1.SetActive(true);
                         light1.SetActive(true);
                         cl1 = true;
+                        burnCandle.Play();
                         CheckResult();
                     }
                                     
@@ -129,13 +140,13 @@ public class CandlePuzzle : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("LightingCandle"))
         {
             PublicVars.haveLightingCandle = false;
         }
-    }*/
+    }
 
     void CheckResult() 
     {
@@ -144,9 +155,12 @@ public class CandlePuzzle : MonoBehaviour
             if (currentOrder.Equals(correctAnswer))
             {
                 testCube.SetActive(true);
+                treasureSound.Play();
             }
             else 
             {
+                candleFail.Play();
+
                 candle6.SetActive(false);
                 light6.SetActive(false);
                 cl6 = false;
