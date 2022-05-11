@@ -6,6 +6,7 @@ public class Burn : MonoBehaviour
 {
 
     public GameObject BigFire;
+    public AudioSource doorBurn;
 
 
     private void OnCollisionEnter(Collision collision)
@@ -16,6 +17,7 @@ public class Burn : MonoBehaviour
         {
             if (PublicVars.haveTorch) 
             {
+                doorBurn.Play();
                 Explode();
                 Destroy(gameObject);
             }
