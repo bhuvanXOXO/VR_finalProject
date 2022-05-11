@@ -6917,6 +6917,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4461917220047129877, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
+      propertyPath: m_Radius
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461917220047129877, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
+      propertyPath: m_Center.x
+      value: -0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4461917220047129878, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6972,6 +6980,14 @@ PrefabInstance:
     - target: {fileID: 4461917220174877986, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461917220174877987, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
+      propertyPath: m_Radius
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461917220174877987, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
+      propertyPath: m_Center.x
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4461917220174877996, guid: c128afef748405b45a29dc64df8e6e11, type: 3}
       propertyPath: m_Materials.Array.data[0]
